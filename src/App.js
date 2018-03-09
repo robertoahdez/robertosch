@@ -6,8 +6,8 @@ import {withRouter} from 'react-router-dom'
 import {Switch, Route} from 'react-router'
 import PageNotFound from './PageNotFound'
 
-import Comp1 from './Comp1'
-import Comp2 from './Comp2'
+import Comp1 from './Component/Comp1'
+import Comp2 from './Component/Comp2'
 
 class App extends Component {
   state = {
