@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import spaceship from '../spaceship.gif';
-import '../App.css';
+import spaceship from './spaceship.gif';
+import './App.css';
 import{Container, Button} from 'semantic-ui-react'
 import {withRouter} from 'react-router-dom'
 import {Switch, Route} from 'react-router'
-import PageNotFound from './PageNotFound'
-
-import Comp1 from './Component/Comp1'
-import Comp2 from './Component/Comp2'
+import PageNotFound from './Components/PageNotFound'
+import Comp1 from './Components/Comp1'
+import Comp2 from './Components/Comp2'
 
 class App extends Component {
   state = {

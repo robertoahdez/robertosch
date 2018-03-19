@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Input} from 'semantic-ui-react';
+import {Container, Input, Button} from 'semantic-ui-react';
 //import {withRouter, Link} from 'react-router-dom'
 import base from './../utils/firebase';
 
@@ -38,7 +38,9 @@ class Comp2 extends Component {
             Change
           </Button>
         </div>
-    )
+      </Container>
+    );
   }
-
 }
+
+export default Comp2;
