@@ -25,6 +25,10 @@ switchState = () => this.setState({comp: !this.state.comp})
   )
     return (
       <Container>
+      <header>
+        <t1> Hello </t1>
+      </header>
+      <t1> Hennllpouiychvj </t1>
         <Switch>
           <Route exact path = '/' component = {Comp1}/>
           <Route path = '/comp2' component = {Comp2}/>
