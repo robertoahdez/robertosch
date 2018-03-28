@@ -22,7 +22,7 @@ switchState = () => this.setState({comp: !this.state.comp})
       <Button
         onClick={this.switchState}
       >Switch Component</Button>
-  )
+    )
     return (
       <Container>
       <header>
