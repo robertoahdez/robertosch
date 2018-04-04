@@ -7,6 +7,8 @@ import {Switch, Route} from 'react-router'
 import PageNotFound from './Components/PageNotFound'
 import Comp1 from './Components/Comp1'
 import Comp2 from './Components/Comp2'
+import Home from './Components/Home'
+import MenusInfo from './Components/MenusInfo'
 
 class App extends Component {
   state = {
@@ -27,12 +29,14 @@ switchState = () => this.setState({comp: !this.state.comp})
       <Container>
       <header>
         <t1> Hello </t1>
+        <MenusInfo/>
       </header>
-      <t1> Hennllpouiychvj </t1>
+
         <Switch>
-          <Route exact path = '/' component = {Comp1}/>
-          <Route path = '/comp2' component = {Comp2}/>
-          <Route path = '/' component = {PageNotFound}/>
+          //<Route exact path = '/Comp1' component = {Comp1}/>
+          <Route exact path = '/Comp2' component = {Comp2}/>
+          <Route exact path = '/PageNotFound' component = {PageNotFound}/>
+          <Route exact path = '/Home' component = {Home}/>
         </Switch>
       </Container>
     );
