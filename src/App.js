@@ -33,10 +33,11 @@ switchState = () => this.setState({comp: !this.state.comp})
       </header>
 
         <Switch>
+          <Route exact path = '/' component = {Home}/>
           //<Route exact path = '/Comp1' component = {Comp1}/>
           <Route exact path = '/Comp2' component = {Comp2}/>
-          <Route exact path = '/PageNotFound' component = {PageNotFound}/>
-          <Route exact path = '/Home' component = {Home}/>
+
+          <Route path = '/' component = {PageNotFound}/>
         </Switch>
       </Container>
     );

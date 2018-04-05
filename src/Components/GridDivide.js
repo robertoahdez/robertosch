@@ -1,33 +1,38 @@
-import React from 'react'
+import React, {Component} from 'react';
 import { Grid, Image } from 'semantic-ui-react'
+import spaceship from '../spaceship.gif'
+import {withRouter} from 'react-router-dom'
 
 class GridDivide extends Component{
 
-  <Grid columns={3} divided>
-    <Grid.Row>
-      <Grid.Column>
-        <Image src='/assets/images/wireframe/media-paragraph.png' />
-      </Grid.Column>
-      <Grid.Column>
-        <Image src='/assets/images/wireframe/media-paragraph.png' />
-      </Grid.Column>
-      <Grid.Column>
-        <Image src='/assets/images/wireframe/media-paragraph.png' />
-      </Grid.Column>
-    </Grid.Row>
+  render(){
+    return(
+      <Grid columns = {3} divided>
+        <Grid.Row>
+          <Grid.Column>
+            <img src = {spaceship} className = "logo"/>
+          </Grid.Column>
+          <Grid.Column>
+            <img src = {spaceship} className = "logo"/>
+          </Grid.Column>
+          <Grid.Column>
+            <img src = {spaceship} className = "logo"/>
+          </Grid.Column>
+        </Grid.Row>
 
-    <Grid.Row>
-      <Grid.Column>
-        <Image src='/assets/images/wireframe/media-paragraph.png' />
-      </Grid.Column>
-      <Grid.Column>
-        <Image src='/assets/images/wireframe/media-paragraph.png' />
-      </Grid.Column>
-      <Grid.Column>
-        <Image src='/assets/images/wireframe/media-paragraph.png' />
-      </Grid.Column>
-    </Grid.Row>
-  </Grid>
-
+        <Grid.Row>
+          <Grid.Column>
+            <img src = {spaceship} className = "logo"/>
+          </Grid.Column>
+          <Grid.Column>
+            <img src = {spaceship} className = "logo"/>
+          </Grid.Column>
+          <Grid.Column>
+            <img src = {spaceship} className = "logo"/>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    )
+  }
 }
-export default GridExampleDividedNumber
+export default withRouter(GridDivide);

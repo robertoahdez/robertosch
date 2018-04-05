@@ -4,7 +4,7 @@ import {withRouter, Link} from 'react-router-dom'
 import base from './../utils/firebase';
 import spaceship from '../spaceship.gif';
 import MenusInfo from './MenusInfo'
-
+import GridDivide from './GridDivide'
 
 class Home extends Component{
 
