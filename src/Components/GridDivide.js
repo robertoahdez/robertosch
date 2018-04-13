@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Grid, Image } from 'semantic-ui-react'
 import spaceship from '../spaceship.gif'
+import tenor from '../tenor.gif'
 import {withRouter} from 'react-router-dom'
 
 class GridDivide extends Component{
@@ -10,13 +11,13 @@ class GridDivide extends Component{
       <Grid columns = {3} divided>
         <Grid.Row>
           <Grid.Column>
-            <img src = {spaceship} className = "logo"/>
+            <img src = {tenor} className = "logo"/>
           </Grid.Column>
           <Grid.Column>
             <img src = {spaceship} className = "logo"/>
           </Grid.Column>
           <Grid.Column>
-            <img src = {spaceship} className = "logo"/>
+            <img src = {tenor} className = "logo"/>
           </Grid.Column>
         </Grid.Row>
 
@@ -25,7 +26,7 @@ class GridDivide extends Component{
             <img src = {spaceship} className = "logo"/>
           </Grid.Column>
           <Grid.Column>
-            <img src = {spaceship} className = "logo"/>
+            <img src = {tenor} className = "logo"/>
           </Grid.Column>
           <Grid.Column>
             <img src = {spaceship} className = "logo"/>

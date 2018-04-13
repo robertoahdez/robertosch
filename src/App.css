@@ -1,6 +1,7 @@
 
-.App {
+.Ether {
   text-align: center;
+  background-color: #262d38;
 }
 
 .App-logo {
@@ -10,10 +11,10 @@
 
 header {
   background-color: #0046b7;
-  height: 150px;
+  height: 200px;
   padding: 20px;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
 h1{
@@ -22,7 +23,10 @@ h1{
 }
 
 t1{
-  font-size: 20px;
+  font-size: 80px;
+  font-family: fantasy;
+  font-style: normal;
+  letter-spacing: 5px;
 }
 
 .App-title {

@@ -8,7 +8,11 @@ import PageNotFound from './Components/PageNotFound'
 import Comp1 from './Components/Comp1'
 import Comp2 from './Components/Comp2'
 import Home from './Components/Home'
+import Customize from './Components/Customize'
+import FAQs from './Components/FAQs'
+import ContactUs from './Components/ContactUs'
 import MenusInfo from './Components/MenusInfo'
+import Menus from './Components/Menus'
 
 class App extends Component {
   state = {
@@ -26,20 +30,17 @@ switchState = () => this.setState({comp: !this.state.comp})
       >Switch Component</Button>
     )
     return (
-      <Container>
-      <header>
-        <t1> Hello </t1>
-        <MenusInfo/>
-      </header>
-
+      <div className = "Ether">
         <Switch>
           <Route exact path = '/' component = {Home}/>
-          //<Route exact path = '/Comp1' component = {Comp1}/>
-          <Route exact path = '/Comp2' component = {Comp2}/>
-
+          <Route exact path = '/Customize' component = {Customize}/>
+          <Route exact path = '/FAQs' component = {FAQs}/>
+          <Route exact path = '/ContactUs' component = {ContactUs}/>
           <Route path = '/' component = {PageNotFound}/>
+          //<Route exact path = '/Comp1' component = {Comp1}/>
+          //<Route exact path = '/Comp2' component = {Comp2}/>
         </Switch>
-      </Container>
+      </div>
     );
   }
 }

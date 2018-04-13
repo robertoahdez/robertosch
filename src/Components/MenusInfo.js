@@ -12,7 +12,7 @@ class MenusInfo extends Component{
   handleAClick = (e, {name}) => this.setState({pageName: name})
 
   link1 = () => {
-    this.props.history.push('/Home');
+    this.props.history.push('/');
     this.setState({pageName: 'Home'});
   }
   link2 = () => {
@@ -33,7 +33,7 @@ class MenusInfo extends Component{
 
     return(
       <Container testAlign = 'right'>
-        <Menu style = {{alignItem: 'right'}}>
+        <Menu style = {{alignItem: 'right'}} fluid widths = {4}>
           <Menu.Item key = {'Home'} name = {'Home'} active = {pageName === 'Home'} color = 'white' onClick = {this.link1}/>
           <Menu.Item key = {'Customize'} name = {'Customize'} active = {pageName === 'Customize'} color = 'white' onClick = {this.link2}/>
           <Menu.Item key = {'FAQs'} name = {'FAQs'} active = {pageName === 'FAQs'} color = 'white' onClick = {this.link3}/>

@@ -3,9 +3,8 @@ import {Container, Button, Input, Segment} from 'semantic-ui-react';
 import {withRouter, Link} from 'react-router-dom'
 import base from './../utils/firebase';
 import MenusInfo from './MenusInfo'
-import GridDivide from './GridDivide'
 
-class Home extends Component{
+class FAQs extends Component{
   render(){
     return(
       <div>
@@ -16,15 +15,9 @@ class Home extends Component{
           <br/>
           <t1> Etheriøus </t1>
         </header>
-
-        <Container style = {{textAlign: 'center'}}>
-            <Input fluid icon = 'Google Search' placeholder = 'Search...'/>
-          <br/>
-          <GridDivide/>
-        </Container>
       </div>
     )
   }
 }
 
-export default withRouter(Home);
+export default withRouter(FAQs);

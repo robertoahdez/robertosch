@@ -7,13 +7,12 @@ class Menus extends Component{
     return(
       <div>
         <header>
-          //<img src = {logo} className = "logo" alt = "logo"/>
           <h1 className = "App-title">
             Welcomen!
           </h1>
-        <header>
+        </header>
       </div>
-    )
+    );
   }
 }
 
