@@ -6,7 +6,7 @@ import turnitin from '../turnitin.jpg'
 import youtube from '../youtube.jpg'
 import howdy from '../howdy.jpg'
 import docs from '../docs.jpg'
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 
 class GridDivide extends Component{
 

@@ -16,12 +16,12 @@ class MenusInfo extends Component{
     this.setState({pageName: 'Home'});
   }
   link2 = () => {
-    this.props.history.push('/Customize');
-    this.setState({pageName: 'Customize'});
-  }
-  link3 = () => {
     this.props.history.push('/FAQs');
     this.setState({pageName: 'FAQs'});
+  }
+  link3 = () => {
+    this.props.history.push('/Customize');
+    this.setState({pageName: 'Customize'});
   }
   link4 = () => {
     this.props.history.push('/ContactUs');
@@ -35,8 +35,8 @@ class MenusInfo extends Component{
       <Container testAlign = 'right'>
         <Menu style = {{alignItem: 'right'}} fluid widths = {4}>
           <Menu.Item key = {'Home'} name = {'Home'} active = {pageName === 'Home'} color = 'white' onClick = {this.link1}/>
-          <Menu.Item key = {'Customize'} name = {'Customize'} active = {pageName === 'Customize'} color = 'white' onClick = {this.link2}/>
-          <Menu.Item key = {'FAQs'} name = {'FAQs'} active = {pageName === 'FAQs'} color = 'white' onClick = {this.link3}/>
+          <Menu.Item key = {'FAQs'} name = {'FAQs'} active = {pageName === 'FAQs'} color = 'white' onClick = {this.link2}/>
+          <Menu.Item key = {'Customize'} name = {'Customize'} active = {pageName === 'Customize'} color = 'white' onClick = {this.link3}/>
           <Menu.Item key = {'ContactUs'} name = {'ContactUs'} active = {pageName === 'ContactUs'} color = 'white' onClick = {this.link4}/>
         </Menu>
       </Container>

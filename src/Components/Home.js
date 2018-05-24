@@ -22,7 +22,6 @@ class Home extends Component{
 
         <Container style = {{textAlign: 'center'}}>
           <br/><br/>
-          <a style={{display: "table-cell"}} href="someLink" target="_blank">text</a>
           <Input placeholder = 'Search'
             onChange = {(event, data) => this.setState({search: data.value})}
             action={
