@@ -25,9 +25,9 @@ switchState = () => this.setState({comp: !this.state.comp})
     console.log(this.props);
 
     let button = (
-      <Button
-        onClick={this.switchState}
-      >Switch Component</Button>
+      <Button onClick={this.switchState}>
+      Switch Component
+      </Button>
     )
     return (
       <div className = "Ether">

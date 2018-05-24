@@ -17,6 +17,10 @@ header {
   text-align: center;
 }
 
+fhead {
+  background-color: white;
+}
+
 h1{
   color: rgba(0, 0, 0, 0.9);
   margin-top: -10px;

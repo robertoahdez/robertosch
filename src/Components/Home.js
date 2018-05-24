@@ -6,20 +6,34 @@ import MenusInfo from './MenusInfo'
 import GridDivide from './GridDivide'
 
 class Home extends Component{
+  state = {
+    search: '',
+  }
+
   render(){
+
     return(
       <div>
         <header>
           <MenusInfo/>
-          <br/>
-          <br/>
-          <br/>
+          <br/><br/><br/>
           <t1> Etheriøus </t1>
         </header>
 
         <Container style = {{textAlign: 'center'}}>
-            <Input fluid icon = 'Google Search' placeholder = 'Search...'/>
-          <br/>
+          <br/><br/>
+          <a style={{display: "table-cell"}} href="someLink" target="_blank">text</a>
+          <Input placeholder = 'Search'
+            onChange = {(event, data) => this.setState({search: data.value})}
+            action={
+              <Link to={'https://www.google.com/search?q=' + this.state.search}>
+                <Button>
+                  Search
+                </Button>
+              </Link>
+            }
+          />
+          <br/><br/><br/>
           <GridDivide/>
         </Container>
       </div>

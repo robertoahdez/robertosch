@@ -10,11 +10,11 @@ class ContactUs extends Component{
       <div>
         <header>
           <MenusInfo/>
-          <br/>
-          <br/>
-          <br/>
+          <br/><br/><br/>
           <t1> Etheriøus </t1>
         </header>
+
+        
       </div>
     )
   }
